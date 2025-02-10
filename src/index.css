@@ -1,0 +1,109 @@
+.custom-bolder {
+  font-weight: 400; /*custom font boldness*/
+}
+
+body {
+  background-color: rgb(216, 239, 255); /*colour of the general background*/
+  font-family: Georgia, 'Times New Roman', Times, serif; /*default font family incase the custom special fonts dont render*/
+  font-size: 130%;
+}
+
+.menu-container { /*container for the entire menu*/
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; /*puts equal space between contents*/
+  height: 100vh; /*fit 100% of the viewport height*/
+  box-sizing: border-box; /*specifies behaviour of width and height properties, includes padding and border in the element's total width and height*/
+}
+
+.menu-section { /*container for each section of the menu*/
+  flex: 1; /*takes up the remaining space*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-items { /*container for the menu items*/
+  flex-grow: 1;   
+  max-width: 100%; /*maximum width of the menu items*/
+}
+
+
+/*/////////special custom fonts/////////////*/
+.norican-regular {
+  font-family: "Norican", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.luxurious-roman-regular {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-regular {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/*////////////////////////////////////////*/
+
+
+.custom-color { /*custom color for the categories I wanted to add*/
+  color: rgb(0, 22, 218);
+}
+
+.card-body { /*container for the card body*/
+  display: flex;
+  flex-direction: row; /*arranges the cards in a row*/
+  align-items: center; /*aligns the cards in the center vertically */
+  flex-wrap: nowrap; /*prevents the cards from wrapping*/
+  overflow: hidden; /*hides the scroll bar of the cards*/
+}
+
+.card {
+  overflow: hidden; /*hides the scroll bar of the cards too for extra assurance*/
+}
+
+.d-flex img { /*image container (which also contains other elements)*/
+  width: 260px; 
+  height: auto; 
+  border-radius: 15px;
+  margin-right: 15px; 
+  object-fit: contain; /*scales to fit the container*/
+}
+
+.d-flex.flex-column { /*container for the card body (displayflex)*/
+  flex-grow: 1; 
+  word-wrap: break-word; /*breaks the word if it exceeds the container*/
+} 
+
+.card p { /*paragraph container for the card*/
+  margin: 0; /*removes the margin so it fits on a tighter space without issue*/
+}
+
+@media (max-width: 750px) { /*media query for smaller screens*/
+  .d-flex img {
+    max-width: 150px; /*maximum width of the display*/ 
+    max-height: 120px; /*maximum height of the display to ensure it fits*/
+  }
+}
+
+.promovid-container { /*container for the promotional video*/
+  position: relative; /*position the video using its original position when its first placed*/
+  width: 100vw; /*fit 100% of the viewport width*/
+  height: 100vh; /*fit 100% of the viewport height*/
+  overflow: hidden; /*hides the scroll bar of the video*/
+}
+
+.promovid-container video { /*point specifically to the video*/
+  position: absolute; /*position the video using the viewport*/
+  top: 0; /*0 pixels from the top*/
+  left: 0; /*0 pixels from the left*/
+  width: 100%; /*fit 100% of the viewport width*/
+  height: 100%; /*fit 100% of the viewport height*/
+  object-fit: cover; /*scales the video to cover the entire container*/
+}
