@@ -1,7 +1,18 @@
 # Digital-Menu
 
 ## Project Description
-This is a digital menu I created for a fast food business to be displayed on their TVs. The front-end is built with React, HTML/CSS, Bootstrap, JSX and JavaScript, while the back-end has Node.js using the Express framework, with a PostgreSQL database
+This is a digital menu I created as requested by afast food business to be displayed on their TVs. The front-end is built with React, HTML/CSS, Bootstrap, JSX and JavaScript, while the back-end has Node.js using the Express framework, with a PostgreSQL database
+
+## Menu Display Examples
+Wider screens (such as a restaurant TV):
+
+![Screenshot (222)](https://github.com/user-attachments/assets/5c30ace1-da52-4ca4-9aa3-d8b40ceab437)
+
+Smaller screens (such as mobile devices):
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/25c0b7d0-225c-4545-8c3c-b9aea0ff260b" width="400px">
+</p>
 
 ## Tech Stack
 - **Front-End:** React, HTML/CSS, Bootstrap, JSX and JavaScript
